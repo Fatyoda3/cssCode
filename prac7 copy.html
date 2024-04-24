@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			header {
+				background: black;
+				display: grid;
+				grid-template-columns: auto auto;
+				grid-template-rows: auto;
+				column-gap: 40px;
+				color: white;
+			}
+
+			.circle {
+				background: white;
+				width: 50px;
+				height: 50px;
+
+				border-radius: 70px;
+				margin: 5px 20px;
+
+				color: blueviolet;
+				text-align: center;
+
+				font: italic 1.6em bolder;
+			}
+
+			.menu {
+				background: rgb(6, 219, 2);
+				width: 50px;
+				height: 50px;
+				border-radius: 70px;
+				margin: 5px 20px;
+
+				color: blueviolet;
+				padding: 5px 5px;
+				text-align: center;
+
+				font: italic 1.1em bolder;
+			}
+			li {
+				font-size: 1.2em;
+				display: inline-block;
+				margin: 0px 6px;
+			}
+
+			nav {
+				width: 100vw;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+			}
+			ul {
+				align-self: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="circle">B</div>
+				<div class="menu">Menu</div>
+				<ul>
+					<li>home</li>
+					<li>about</li>
+					<li>contact</li>
+				</ul>
+			</nav>
+		</header>
+	</body>
+</html>

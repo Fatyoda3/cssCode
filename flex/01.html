@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>flex</title>
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
+
+			body {
+				background-color: black;
+				color: white;
+				overflow-x: hidden;
+			}
+			.nav {
+				margin: 0;
+
+				display: flex;
+
+				position: sticky;
+				z-index: 1;
+
+				width: 98vw;
+				top: 0;
+				left: 0;
+
+				justify-content: space-between;
+
+				align-items: center;
+
+				height: 4rem;
+
+				background: black;
+				color: white;
+			}
+
+			#logo {
+				margin: 1rem 1.6rem;
+				align-self: flex-start;
+
+				background: rgb(2, 51, 2);
+
+				width: 2rem;
+				height: 2rem;
+
+				border-radius: 1rem;
+			}
+
+			ul {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			li {
+				margin: 0 20px;
+				list-style-type: none;
+
+				text-transform: capitalize;
+			}
+
+			#ParaOne {
+				margin: 1rem;
+				background: rgb(227, 228, 191);
+				color: rgb(238, 70, 238);
+				font: italic 700 25px "Poppins";
+				padding: 1rem 2rem;
+				border-radius: 5rem;
+			}
+
+			#ParaTwo {
+				margin: 1rem;
+				background: rgb(227, 228, 191);
+				color: rgb(238, 70, 238);
+				font: italic 700 25px "Poppins";
+				padding: 1rem 2rem;
+				border-radius: 5rem;
+			}
+
+			#ParaThree {
+				margin: 1rem;
+				background: rgb(227, 228, 191);
+				color: rgb(238, 70, 238);
+				font: italic 700 25px "Poppins";
+				padding: 1rem 2rem;
+				border-radius: 5rem;
+			}
+			.heading-para {
+				width: 20rem;
+				font-size: 3rem;
+				background: orange;
+				position: sticky;
+				top: 100px;
+			}
+			.container {
+				display: flex;
+				/* flex-direction: column; */
+
+				justify-content: space-evenly;
+
+				align-items: center;
+
+				/* flex-wrap: wrap-reverse; */
+			}
+			.container div {
+				font-size: 3rem;
+				/* width: 17rem; */
+				width: 7rem;
+				height: 7rem;
+				border: 3px solid salmon;
+				background-color: orange;
+			}
+
+			.final {
+				display: flex;
+				background-color: mediumseagreen;
+				border-radius: 3rem;
+				padding: 2rem;
+				cursor: pointer;
+				font-size: 1.21rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="nav">
+			<span id="logo"></span>
+			<nav>
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="ParaOne">
+				<h1 class="heading-para">first</h1>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
+				fuga?
+			</div>
+			<div id="ParaTwo">
+				<h1 class="heading-para">second</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+				dolorum a id molestias impedit distinctio modi sed voluptatibus suscipit
+				alias?
+			</div>
+			<div id="ParaThree">
+				<h1 class="heading-para">third</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio facere
+				minima odit maiores, sequi ab dignissimos dolores alias sunt commodi
+				vitae soluta laborum iste adipisci ipsum odio? Voluptates, iusto
+				inventore.
+			</div>
+
+			<!-- <h1 id="SomeText"></h1> -->
+
+			<div class="L">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+				accusantium! Provident saepe voluptas cum, esse necessitatibus
+				asperiores? In, ad officia nobis excepturi incidunt quasi fugiat
+				officiis mollitia recusandae enim ex ducimus sunt quos neque, quaerat
+				repellat alias. Assumenda consequatur tempore ad, dolore nesciunt ea
+				nostrum ab illum minima, ipsa perferendis eligendi nam. Sint fugiat
+				cupiditate eaque numquam nulla sapiente amet! Voluptates veniam eos
+				ducimus! Optio facere eaque enim ex temporibus, dicta nam quaerat, culpa
+				voluptate praesentium id repellendus aliquam blanditiis quae animi
+				cumque non labore reprehenderit obcaecati ea qui, dolorem odio? Soluta
+				voluptatem doloremque cum quisquam quo! Adipisci inventore deserunt
+				repellat aliquid atque excepturi dolor vero numquam quo maiores
+				repudiandae, similique, ipsum sit tenetur libero tempora ut velit nihil
+				ducimus nostrum consequatur amet aspernatur! Molestias minima dolorum
+				laborum aliquid, consequuntur unde eum iste, beatae voluptate impedit
+				esse error minus nemo sapiente enim cumque excepturi, temporibus
+				provident repellendus dolorem quas corporis eos deserunt. Expedita
+				corporis doloremque similique earum architecto facere dignissimos ab
+				voluptatibus aut adipisci quidem atque sequi totam illo, consequuntur
+				quaerat at labore, et hic rerum. Explicabo debitis eos quo possimus eum
+				pariatur? Porro voluptas mollitia nisi dolorem fugiat. Beatae minima
+				quos incidunt facere dignissimos ipsa voluptatum blanditiis ipsam
+				similique recusandae eos tempora in adipisci optio eaque vero aperiam
+				temporibus delectus, eum accusamus sequi quasi eveniet odit. Eos at
+				explicabo deserunt eveniet. Iste facere eveniet consectetur delectus
+				ducimus quidem eius eaque nobis earum reiciendis maiores molestias
+				necessitatibus, quae nam impedit! Pariatur aperiam harum repellendus
+				ipsum nisi magni laudantium, ullam quaerat odit delectus maxime est
+				eius! Nesciunt aliquam quis quam praesentium porro debitis! Facilis
+				nostrum illo ipsa aliquam laboriosam incidunt cupiditate officia porro
+				similique est modi architecto nihil, neque adipisci deleniti atque
+				natus. Dolorem aut unde, rem vel nihil quasi molestias ea, dicta hic
+				maxime sed ducimus aspernatur necessitatibus, in totam veritatis.
+				Voluptas rem inventore deleniti debitis, tenetur dolorem in commodi
+				cumque similique, eveniet molestias quo impedit, iure asperiores.
+				Dignissimos, vel quisquam. Necessitatibus, iusto ipsa commodi nihil
+				expedita impedit? Ex quaerat at ut voluptas numquam eum eligendi facilis
+				sint ducimus unde quasi nobis aspernatur delectus, magni eveniet
+				molestias officiis? Voluptatibus minus voluptatum dolorem. Illo dolores
+				rem tenetur earum dolor, repellat reiciendis debitis, officiis aliquid
+				eveniet consectetur sequi, molestias ipsum placeat autem incidunt
+				repudiandae optio perspiciatis nisi eaque in suscipit exercitationem
+				aspernatur ad? Voluptates veniam non sint beatae possimus quod dolore ex
+				nesciunt similique perspiciatis veritatis itaque, quo est tempore
+				consectetur mollitia eos sapiente eaque iusto ipsam eum. Iure earum
+				dolorum temporibus eius voluptatem facere blanditiis ab, alias molestias
+				commodi eveniet ad totam officia, dolor et numquam ipsa placeat
+				aspernatur! Nihil, sed necessitatibus modi aut quidem enim dolorem
+				nulla, tempora ipsa laborum blanditiis, quo neque facilis perferendis
+				odit eveniet. Fuga maiores, aut quidem sed quasi, quia itaque molestiae
+				quam, in laborum expedita quisquam adipisci? Praesentium saepe quam
+				similique, sapiente, magnam numquam totam nesciunt fugit exercitationem
+				voluptates beatae sunt eaque omnis harum animi velit neque dicta
+				pariatur odit magni. Ullam ipsa nisi possimus rerum exercitationem
+				maiores accusamus! Aliquam facere aspernatur porro hic molestias!
+			</div>
+		</main>
+		<div class="container">
+			<div>one</div>
+			<div>two</div>
+			<div>three</div>
+		</div>
+
+		<footer class="final">
+			<details>
+				<summary>Lorem ipsum dolor sit amet.</summary>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+				asperiores officiis repudiandae ab hic quaerat molestias nihil maxime
+				eaque ducimus corporis velit aliquam eligendi laboriosam autem
+				perspiciatis tenetur, eum odit aspernatur, quidem recusandae quo
+				accusantium voluptates nobis? Quos sit similique, cum corporis
+				laboriosam ratione possimus ipsa officiis vitae quod beatae.
+			</details>
+			<div>&copy;</div>
+			<div>
+				&lt;do you love me? if you knew how you were going to die; how would you
+				live your live differently?
+			</div>
+			<div>&gt;</div>
+			<div>&boxHu;</div>
+		</footer>
+		<!-- <script defer>
+			const SomeText = document.querySelector("#SomeText");
+
+			let demoText = [..."hell world"];
+			var i = 0;
+			 console.log(demoText);
+			
+			console.log(demoText.length);
+			myInterval = setInterval(() => {
+				SomeText.innerText += `${demoText[i]}`;
+              //  SomeText.innerText +=`${demoText[i]}|`;
+				i++;
+				console.log(i);
+			}, 200);
+
+			function stop() {
+				clearInterval(myInterval);
+			}
+			setTimeout(() => stop(), 2100);
+		</script> -->
+	</body>
+</html>

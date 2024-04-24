@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				overflow: hidden;
+			}
+			nav {
+				padding: 0;
+				margin: 0;
+			}
+			nav :first-child {
+				margin: 15px 10px;
+			}
+			nav {
+				background: black;
+				color: white;
+				display: flex;
+				justify-content: space-between;
+			}
+			#circle {
+				width: 50px;
+				height: 45px;
+				background: orange;
+				border-radius: 72px;
+			}
+			ul {
+				margin: 0 40px;
+				padding: 12px 24px;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+			li {
+				margin: 0 12px;
+				list-style-type: none;
+			}
+			.image {
+				width: 100vw;
+				height: 50vh;
+				background-image: -webkit-linear-gradient(
+					right,
+					orange,
+					purple,
+					green,
+					white,
+					black,
+					pink
+				);
+			}
+			.main {
+				display: flex;
+				width: 100vw;
+				justify-content: space-around;
+				border: 3px solid magenta;
+			}
+			.box {
+				width: 123px;
+				height: 123px;
+				background: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div id="circle"></div>
+			<ul>
+				<li>home</li>
+				<li>about</li>
+				<li>contact</li>
+			</ul>
+		</nav>
+		<div class="image"></div>
+		<div class="main">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+	</body>
+</html>

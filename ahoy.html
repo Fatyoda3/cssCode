@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>red</title>
+<link rel="shortcut icon" href="#" type="image/x-icon">
+		<script defer>
+			//	console.log("hello world");
+
+			let playTogether = new Promise((resolve, reject) => {
+				x = 1 + 1;
+				if (x == 2) {
+					resolve("hello world promise consumed as resolved ");
+				} else {
+					reject("object promise consumed as failed /rejected  ");
+				}
+			});
+			//consuming the promise
+			// playTogether
+			// 	.then((resolved) => {
+			// 		console.log("hello\n " + resolved);
+			// 	})
+			// 	.catch((e) => {
+			// 		console.log("fuck the police" + e);
+			// 	});
+			// a new one just for the kicks
+			let newBanner = new Promise((r, f) => {
+				let n = 5;
+
+				if (n == 5) {
+					r("i created new banner ");
+				} else {
+					f("i failed to create a new banner ");
+				}
+			});
+
+			newBanner
+				.then((r) => console.log("resolved " + r))
+				.catch((f) => console.log("failed " + f));
+
+
+            async function Hello(){
+                console.log("hello ");
+                setTimeout(()=>{
+                    console.log('hello guys ');
+                },10000)
+            }
+
+            Hello();
+
+
+			
+		</script>
+	</head>
+	<body>
+		<p>hello</p>
+	</body>
+</html>

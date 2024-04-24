@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			nav {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: auto;
+
+				background: black;
+
+				font: 1.1em bolder Helvetica;
+
+				color: whitesmoke;
+			}
+
+			.c {
+				background: #ffffff
+					linear-gradient(
+						rgb(240, 136, 240),
+						rgb(255, 188, 188),
+						rgb(237, 82, 237),
+						rgb(193, 245, 193)
+					);
+				width: 50px;
+				height: 50px;
+
+				border-radius: 72px;
+				margin: 10px 15px;
+			}
+
+			ul {
+				display: grid;
+
+				column-gap: 50px;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: auto;
+			}
+
+			li {
+				list-style-type: none;
+				margin: 10px 15px;
+				padding: 10px 5px;
+			}
+			.container {
+				display: grid;
+				column-gap: 3em;
+				grid-template-columns: repeat(2, 1fr);
+			}
+			.main {
+				width: 200px;
+				height: 200px;
+				margin: 2em 0 0 0;
+				border: 13px double rgb(253, 166, 5);
+			}
+
+			.main1 {
+				width: 200px;
+				height: 200px;
+				margin: 2em 0 0 1em;
+				border: 13px double rgb(34, 0, 255);
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div class="c"></div>
+
+			<ul>
+				<li>home</li>
+				<li>about</li>
+				<li>contact</li>
+			</ul>
+		</nav>
+
+		<div class="container">
+			<div class="main1"></div>
+			<div class="main"></div>
+		</div>
+	</body>
+</html>

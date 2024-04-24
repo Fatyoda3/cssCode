@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.container {
+				height: 50vh;
+
+				background: cyan;
+
+				display: flex;
+				/* flex-direction: row; */
+				/* flex-direction: row-reverse; */
+				/* flex-direction: column; */
+				/* flex-direction: column-reverse; */
+				/* flex-wrap:  wrap; */
+				/* flex-wrap: wrap-reverse; */
+
+				justify-content: center;
+				align-items: center;
+				/* align-items: flex-end; */
+			}
+
+			.box {
+				font-size: 3rem;
+				background-color: orange;
+				width: 120px;
+				height: 100px;
+				border: 2px solid rgb(15, 255, 15);
+			}
+			#o1 {
+				background: red;
+				align-self: flex-end;
+				/* order:1; */
+			}
+			#o2 {
+				align-self: flex-start;
+				order: 3;
+				background: pink;
+			}
+
+			#o1 + div {/*next sibling*/
+                flex-grow: 1;
+			}
+
+            #o2 {
+                flex-shrink: 4;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box" id="o1">one</div>
+			<div class="box">two</div>
+			<div class="box" id="o2">three</div>
+			<div class="box">four</div>
+		</div>
+	</body>
+</html>

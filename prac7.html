@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>css media query</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				background: #000;
+			}
+
+			.main {
+				margin: 20px 0px 0px 0px;
+				background: rgba(0, 128, 0, 0.703);
+				border: 1px solid rgba(11, 255, 11, 0.546);
+				border-radius: 18px;
+				width: 25em;
+				height: 25em;
+				box-shadow: rgb(11, 97, 0) 0px 0px 220px 5em;
+			}
+
+			@media screen and (max-width: 1000px) {
+				.main {
+					background: rgba(237, 13, 2, 0.703);
+					border: 1px solid rgba(251, 5, 5, 0.546);
+					width: 5em;
+					height: 5em;
+					box-shadow: rgb(255, 26, 5) 0px 0px 120px 5em;
+				}
+			}
+
+			@media screen and (max-width: 800px) {
+				.main {
+					background: rgba(2, 53, 237, 0.703);
+					border: 1px solid rgba(30, 5, 251, 0.546);
+					width: 5em;
+					height: 5em;
+					box-shadow: rgb(255, 5, 193) 0px 0px 120px 5em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main"></div>
+	</body>
+</html>

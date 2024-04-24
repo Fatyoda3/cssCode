@@ -1,0 +1,50 @@
+body {
+	color: white;
+	/* background-image: -webkit-linear-gradient(
+		right,
+		rgb(212, 182, 128),
+		rgba(205, 159, 205, 0.616),
+		rgb(178, 239, 178)
+	); */
+
+	/* background-size: 1350px 250px;
+
+	background-repeat: no-repeat;
+	background-color: rgba(128, 128, 128, 0.073);
+	background-attachment: fixed; */
+
+	/* i can short_hand these properties ,cant set size */
+
+	background-size: 350px 250px;
+	background: rgba(0, 128, 0, 0.283) -webkit-linear-gradient(
+			right,
+			rgb(212, 182, 128),
+			rgba(205, 159, 205, 0.616),
+			rgb(178, 239, 178)
+		) no-repeat fixed left;
+}
+
+#red {
+	width: 360px;
+	height: 150px;
+	border: 3px solid red;
+
+	color: white;
+	background-color: rgb(232, 104, 104);
+}
+
+.one {
+	width: 200px;
+	height: 200px;
+	/* box-sizing: content-box; default behavior  */
+	border: 20px solid red;
+	padding: 30px;
+	margin: 50px;
+	box-sizing: border-box;
+}
+
+/* .one ~ div {
+	width: 150px;
+	box-sizing: content-box;
+	border: 1px solid red;
+} */

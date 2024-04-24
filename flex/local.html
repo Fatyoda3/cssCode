@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="name"></div>
+		<script>
+			let Name = document.querySelector('.name');
+
+			//localStorage.setItem('name', 'raj');
+
+			// localStorage.removeItem("name");
+
+			console.log(localStorage.getItem('name'));
+
+			Name.innerText = localStorage.getItem('name');
+/* 
+			for (let i = 0; i < 5; i++) {
+				localStorage.setItem(`name${i}`, i);
+			} */
+			console.log(localStorage.getItem("name0"));
+		</script>
+	</body>
+</html>
